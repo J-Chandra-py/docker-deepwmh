@@ -14,7 +14,7 @@ cd docker-deepwmh
 ```bash
 docker build -t <image_name> .
 ```
-or pull the prebuilt docker image
+or pull the prebuilt docker image (recommended to build the image localy)
 ```bash
 docker pull deepwmh:v1.0.1
 ```
@@ -48,6 +48,6 @@ Replace `/path/to/data`, `/path/to/output`, `<flair_image>`, `<subject_id>`, and
 ---
 
 ## Notes
-Ensure that NVIDIA drivers and CUDA are installed for GPU support.
-The install_services.sh script sets up all required dependencies.
-The model file must be present in the source directory, as it is copied from the host to the container during execution.
+- Ensure that NVIDIA drivers and CUDA are installed for GPU support.
+- The install_services.sh script sets up all required dependencies.
+- The model file must be present in the source directory, as it is copied from the host to the container during execution.
